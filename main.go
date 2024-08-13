@@ -17,7 +17,7 @@ var rdb *redis.Client
 
 func main() {
 	rdb = redis.NewClient(&redis.Options{
-		Addr: "url-shortener-redis-ekg2sg.serverless.aps1.cache.amazonaws.com:6379",
+		Addr: "localhost:6379",
 		Password: "",
 		DB: 0,
 	})
